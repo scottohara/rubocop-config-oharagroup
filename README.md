@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/rubocop-config-oharagroup.svg)](https://badge.fury.io/rb/rubocop-config-oharagroup)
+
 O'Hara Group Ruby style guide
 =============================
 
@@ -53,3 +55,10 @@ inherit_gem:
 7. Tag the repo (`git tag -am "Version ${spec.version}" v${spec.version}`)
 8. Push the changes & tag to origin (`git push && git push --tags`)
 9. Publish the new version (`gem push rubocop-config-oharagroup-${spec.version}.gem`)
+
+Publishing requires a `~/.gem/credentials` file. To setup a new computer:
+
+```bash
+curl -u ${rubygems.org username} https://rubygems.org/api/v1/api_key.yaml > ~/.gem/credentials
+chmod 0600 ~/.gem/credentials
+```
