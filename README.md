@@ -17,9 +17,9 @@ end
 
 ```yaml
 inherit_gem:
-	rubocop-config-oharagroup:
-		- default.yml
-		- rails.yml		# optional, only include for rails projects
+  rubocop-config-oharagroup:
+    - default.yml
+    - rails.yml		# optional, only include for rails projects
 
 # ------------------------------------------------------------
 # Cops that rubocop disables by default, but we want to enable
