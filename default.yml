@@ -1,0 +1,116 @@
+# ------------------------------------------------------------
+# Cops that rubocop disables by default, but we want to enable
+# ------------------------------------------------------------
+
+Layout/FirstArrayElementLineBreak:
+  Enabled: true
+
+Layout/FirstHashElementLineBreak:
+  Enabled: true
+
+Layout/FirstMethodArgumentLineBreak:
+  Enabled: true
+
+Layout/FirstMethodParameterLineBreak:
+  Enabled: true
+
+Layout/MultilineAssignmentLayout:
+  Enabled: true
+
+Style/AutoResourceCleanup:
+  Enabled: true
+
+Style/CollectionMethods:
+  Enabled: true
+
+Style/Copyright:
+  Enabled: true
+  Notice: 'Copyright \(c\) 2016 Scott O.Hara, oharagroup.net'
+
+# Style/DocumentationMethod (disabled due to no documentation)
+
+Style/Encoding:
+  Enabled: true
+
+Style/ImplicitRuntimeError:
+  Enabled: true
+
+# Style/InlineComment (disabled due to use of inline comments)
+# Style/MethodCallWithArgsParentheses (prefer no parens)
+
+Style/MethodCalledOnDoEndBlock:
+  Enabled: true
+
+# Style/MissingElse (else not required)
+
+Style/OptionHash:
+  Enabled: true
+
+Style/Send:
+  Enabled: true
+
+Style/StringMethods:
+  Enabled: true
+
+Style/SingleLineBlockParams:
+  Enabled: true
+
+# ------------------------------------------------------------
+# END disabled by default cops
+# ------------------------------------------------------------
+# Cops that rubocop enables by default, but we want to disable
+# ------------------------------------------------------------
+
+# Prefer tabs over spaces
+Layout/Tab:
+  Enabled: false
+
+# Block comment in spec_helper
+Style/BlockComments:
+  Enabled: false
+
+# Only require parens where absolutely necessary
+Style/NestedParenthesizedCalls:
+  Enabled: false
+
+# Disable metrics
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/BlockLength:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/LineLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+# ------------------------------------------------------------
+# END enabled by default cops
+# ------------------------------------------------------------
+# Cops that we want to reconfigure
+# ------------------------------------------------------------
+
+# Changed from 2 (spaces) to 1 (tab)
+Layout/IndentationWidth:
+  Width: 1
+
+Layout/SpaceInsideHashLiteralBraces:
+  EnforcedStyle: no_space
+
+# ------------------------------------------------------------
+# END reconfigured cops
+# ------------------------------------------------------------
