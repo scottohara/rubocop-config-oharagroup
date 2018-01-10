@@ -2,6 +2,9 @@
 # Cops that rubocop disables by default, but we want to enable
 # ------------------------------------------------------------
 
+Layout/ClassStructure:
+  Enabled: true
+
 Layout/FirstArrayElementLineBreak:
   Enabled: true
 
@@ -29,9 +32,6 @@ Style/Copyright:
 
 # Style/DocumentationMethod (disabled due to no documentation)
 
-Style/Encoding:
-  Enabled: true
-
 Style/ImplicitRuntimeError:
   Enabled: true
 
@@ -46,13 +46,18 @@ Style/MethodCalledOnDoEndBlock:
 Style/OptionHash:
   Enabled: true
 
+Style/ReturnNil:
+  Enabled: true
+
 Style/Send:
   Enabled: true
 
-Style/StringMethods:
+Style/SingleLineBlockParams:
   Enabled: true
 
-Style/SingleLineBlockParams:
+# Style/StringHashKeys (disabled because JSON used heavily with string keys)
+
+Style/StringMethods:
   Enabled: true
 
 # ------------------------------------------------------------

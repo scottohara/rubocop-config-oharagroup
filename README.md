@@ -49,12 +49,11 @@ inherit_gem:
 1. Compare the cops listed in Rubocop's `config/disabled.yml` against the 'disabled by default' sections of `default.yml` and `rails.yml`
 2. For any new cops, decide whether to enable (if not, add a comment to `default.yml` or `rails.yml` indicating why)
 3. Update the `spec.version` in `rubocop-config-oharagroup.gemspec`
-4. Rebuild the gem (`gem build rubocop-config-oharagroup.gemspec`)
-5. Reinstall the gem locally (`gem install ./rubocop-config-oharagroup-${spec.version}.gem`)
-6. Test the new gem version in a sibling Ruby project by appending `, path: '../rubocop-config-oharagroup'` to the entry in the projects' `Gemfile`
-7. Tag the repo (`git tag -am "Version ${spec.version}" v${spec.version}`)
-8. Push the changes & tag to origin (`git push && git push --tags`)
-9. Publish the new version (`gem push rubocop-config-oharagroup-${spec.version}.gem`)
+4. Test the new gem version in a sibling Ruby project by appending `, path: '../rubocop-config-oharagroup'` to the entry in the projects' `Gemfile`
+5. Rebuild the gem (`gem build rubocop-config-oharagroup.gemspec`)
+6. Tag the repo (`git tag -am "Version ${spec.version}" v${spec.version}`)
+7. Push the changes & tag to origin (`git push && git push --tags`)
+8. Publish the new version (`gem push rubocop-config-oharagroup-${spec.version}.gem`)
 
 Publishing requires a `~/.gem/credentials` file. To setup a new computer:
 
