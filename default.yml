@@ -5,6 +5,9 @@
 Layout/ClassStructure:
   Enabled: true
 
+Layout/EmptyLineAfterGuardClause:
+  Enabled: true
+
 Layout/FirstArrayElementLineBreak:
   Enabled: true
 
@@ -33,9 +36,6 @@ Style/Copyright:
   Notice: 'Copyright \(c\) 2016 Scott O.Hara, oharagroup.net'
 
 # Style/DocumentationMethod (disabled due to no documentation)
-
-Style/EmptyLineAfterGuardClause:
-  Enabled: true
 
 Style/ImplicitRuntimeError:
   Enabled: true
