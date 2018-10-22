@@ -2,11 +2,14 @@
 # Cops that rubocop disables by default, but we want to enable
 # ------------------------------------------------------------
 
+Bundler/GemComment:
+  Enabled: true
+
 Layout/ClassStructure:
   Enabled: true
 
 Layout/EmptyLineAfterGuardClause:
-  Enabled: true
+  Enabled: true  ??
 
 Layout/FirstArrayElementLineBreak:
   Enabled: true
@@ -25,6 +28,12 @@ Layout/MultilineAssignmentLayout:
 
 # Lint/NumberConversion (prefer cast invalid numbers to 0 rather than throw)
 
+Performance/CaseWhenSplat:
+  Enabled: true
+
+Performance/ChainArrayAllocation:
+  Enabled: true
+
 Style/AutoResourceCleanup:
   Enabled: true
 
@@ -35,18 +44,28 @@ Style/Copyright:
   Enabled: true
   Notice: 'Copyright \(c\) 2016 Scott O.Hara, oharagroup.net'
 
+Style/DateTime:
+  Enabled: true
+
 # Style/DocumentationMethod (disabled due to no documentation)
 
 Style/ImplicitRuntimeError:
   Enabled: true
 
 # Style/InlineComment (disabled due to use of inline comments)
+
+Style/IpAddresses:
+  Enabled: true
+
 # Style/MethodCallWithArgsParentheses (prefer no parens)
 
 Style/MethodCalledOnDoEndBlock:
   Enabled: true
 
 # Style/MissingElse (else not required)
+
+Style/MultilineMethodSignature:
+  Enabled: true
 
 Style/OptionHash:
   Enabled: true

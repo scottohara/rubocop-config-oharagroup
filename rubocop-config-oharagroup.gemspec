@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name = 'rubocop-config-oharagroup'
-  spec.version = '1.3.0'
+  spec.version = '1.4.0'
   spec.summary = "O'Hara Group Ruby style guide"
   spec.description = "Rubocop shared configuration for all O'Hara Group ruby projects"
   spec.author = "Scott O'Hara"
