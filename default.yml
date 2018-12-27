@@ -8,9 +8,6 @@ Bundler/GemComment:
 Layout/ClassStructure:
   Enabled: true
 
-Layout/EmptyLineAfterGuardClause:
-  Enabled: true  ??
-
 Layout/FirstArrayElementLineBreak:
   Enabled: true
 
@@ -32,6 +29,9 @@ Performance/CaseWhenSplat:
   Enabled: true
 
 Performance/ChainArrayAllocation:
+  Enabled: true
+
+Performance/OpenStruct:
   Enabled: true
 
 Style/AutoResourceCleanup:

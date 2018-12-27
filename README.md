@@ -46,14 +46,15 @@ inherit_gem:
 
 ## Upgrading to new rubocop versions:
 
-1. Compare the cops listed in Rubocop's `config/disabled.yml` against the 'disabled by default' sections of `default.yml` and `rails.yml`
-2. For any new cops, decide whether to enable (if not, add a comment to `default.yml` or `rails.yml` indicating why)
-3. Update the `spec.version` in `rubocop-config-oharagroup.gemspec`
-4. Test the new gem version in a sibling Ruby project by appending `, path: '../rubocop-config-oharagroup'` to the entry in the projects' `Gemfile`
-5. Rebuild the gem (`gem build rubocop-config-oharagroup.gemspec`)
-6. Tag the repo (`git tag -am "Version ${spec.version}" v${spec.version}`)
-7. Push the changes & tag to origin (`git push && git push --tags`)
-8. Publish the new version (`gem push rubocop-config-oharagroup-${spec.version}.gem`)
+1. Open Rubocop's `config/default.yml` and search for `Enabled: false`.
+2. Compare these cops against the 'disabled by default' sections of `default.yml` and `rails.yml`
+3. For any new cops, decide whether to enable (if not, add a comment to `default.yml` or `rails.yml` indicating why)
+4. Update the `spec.version` in `rubocop-config-oharagroup.gemspec`
+5. Test the new gem version in a sibling Ruby project by appending `, path: '../rubocop-config-oharagroup'` to the entry in the projects' `Gemfile`
+6. Rebuild the gem (`gem build rubocop-config-oharagroup.gemspec`)
+7. Tag the repo (`git tag -am "Version ${spec.version}" v${spec.version}`)
+8. Push the changes & tag to origin (`git push && git push --tags`)
+9. Publish the new version (`gem push rubocop-config-oharagroup-${spec.version}.gem`)
 
 Publishing requires a `~/.gem/credentials` file. To setup a new computer:
 
