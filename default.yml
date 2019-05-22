@@ -20,24 +20,33 @@ Layout/FirstMethodArgumentLineBreak:
 Layout/FirstMethodParameterLineBreak:
   Enabled: true
 
+Layout/HeredocArgumentClosingParenthesis:
+  Enabled: true
+
+Layout/MultilineArrayLineBreaks:
+  Enabled: true
+
 Layout/MultilineAssignmentLayout:
   Enabled: true
 
+Layout/MultilineHashKeyLineBreaks:
+  Enabled: true
+
+Layout/MultilineMethodArgumentLineBreaks:
+  Enabled: true
+
+Lint/HeredocMethodCallPosition:
+  Enabled: true
+
 # Lint/NumberConversion (prefer cast invalid numbers to 0 rather than throw)
-
-Performance/CaseWhenSplat:
-  Enabled: true
-
-Performance/ChainArrayAllocation:
-  Enabled: true
-
-Performance/OpenStruct:
-  Enabled: true
 
 Style/AutoResourceCleanup:
   Enabled: true
 
 Style/CollectionMethods:
+  Enabled: true
+
+Style/ConstantVisibility:
   Enabled: true
 
 Style/Copyright:
