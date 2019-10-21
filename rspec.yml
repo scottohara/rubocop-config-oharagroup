@@ -1,0 +1,74 @@
+# ------------------------------------------------------------
+# Cops that rubocop disables by default, but we want to enable
+# ------------------------------------------------------------
+
+# RSpec/AlignLeftLetBrace (not using)
+# RSpec/AlignRightLetBrace (not using)
+
+RSpec/Dialect:
+  Enabled: true
+
+# RSpec/MessageExpectation (enable use of both `allow` and 'expect' for message expectations)
+
+RSpec/Pending:
+  Enabled: true
+
+# ------------------------------------------------------------
+# END disabled by default cops
+# ------------------------------------------------------------
+# Cops that rubocop enables by default, but we want to disable
+# ------------------------------------------------------------
+
+# Allow expect_any_instance_of to be used
+RSpec/AnyInstance:
+  Enabled: false
+
+# Allow any context wording
+RSpec/ContextWording:
+  Enabled: false
+
+# Allow empty context for shared examples
+RSpec/EmptyExampleGroup:
+  Enabled: false
+
+# Allow any number of lines in examples
+RSpec/ExampleLength:
+  Enabled: false
+
+# Prefer 'it should...' wording
+RSpec/ExampleWording:
+  Enabled: false
+
+# Allow use of expect in before/after hooks
+RSpec/ExpectInHook:
+  Enabled: false
+
+# Allow stubbing message chains
+RSpec/MessageChain:
+  Enabled: false
+
+# Prefer `expect().to receive ...` over `allow().to receive ...` + `expect().to have_received ...`
+RSpec/MessageSpies:
+  Enabled: false
+
+# Allow any number of expect calls
+RSpec/MultipleExpectations:
+  Enabled: false
+
+# Allow any number of nested groups
+RSpec/NestedGroups:
+  Enabled: false
+
+# Allow concerns to stub subject
+RSpec/SubjectStub:
+  Enabled: false
+
+# ------------------------------------------------------------
+# END enabled by default cops
+# ------------------------------------------------------------
+# Cops that we want to reconfigure
+# ------------------------------------------------------------
+
+# ------------------------------------------------------------
+# END reconfigured cops
+# ------------------------------------------------------------

@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name = 'rubocop-config-oharagroup'
-  spec.version = '1.6.0'
+  spec.version = '2.0.0'
   spec.summary = "O'Hara Group Ruby style guide"
   spec.description = "Rubocop shared configuration for all O'Hara Group ruby projects"
   spec.author = "Scott O'Hara"
@@ -11,6 +11,8 @@ Gem::Specification.new do |spec|
 		'lib/rubocop-config-oharagroup.rb',
 		'LICENSE',
 		'default.yml',
-		'rails.yml'
+		'performance.yml',
+		'rails.yml',
+		'rspec.yml'
 	]
 end

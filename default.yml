@@ -40,6 +40,9 @@ Lint/HeredocMethodCallPosition:
 
 # Lint/NumberConversion (prefer cast invalid numbers to 0 rather than throw)
 
+Migration/DepartmentName:
+  Enabled: true
+
 Style/AutoResourceCleanup:
   Enabled: true
 
