@@ -1,23 +1,14 @@
-# ------------------------------------------------------------
-# Cops that rubocop disables by default, but we want to enable
-# ------------------------------------------------------------
+AllCops:
+  DisplayStyleGuide: true
+  ExtraDetails: true
+  EnabledByDefault: true
+  NewCops: enable
 
-# RSpec/AlignLeftLetBrace (not using)
-# RSpec/AlignRightLetBrace (not using)
-
-RSpec/Dialect:
-  Enabled: true
-
-# RSpec/MessageExpectation (enable use of both `allow` and 'expect' for message expectations)
-
-RSpec/Pending:
-  Enabled: true
-
-# ------------------------------------------------------------
-# END disabled by default cops
-# ------------------------------------------------------------
-# Cops that rubocop enables by default, but we want to disable
-# ------------------------------------------------------------
+# Don't enforce alignment of braces
+RSpec/AlignLeftLetBrace:
+  Enabled: false
+RSpec/AlignRightLetBrace:
+  Enabled: false
 
 # Allow expect_any_instance_of to be used
 RSpec/AnyInstance:
@@ -43,6 +34,10 @@ RSpec/ExampleWording:
 RSpec/ExpectInHook:
   Enabled: false
 
+# Enable use of both `allow` and 'expect' for message expectations
+RSpec/MessageExpectation:
+  Enabled: false
+
 # Allow stubbing message chains
 RSpec/MessageChain:
   Enabled: false
@@ -62,13 +57,3 @@ RSpec/NestedGroups:
 # Allow concerns to stub subject
 RSpec/SubjectStub:
   Enabled: false
-
-# ------------------------------------------------------------
-# END enabled by default cops
-# ------------------------------------------------------------
-# Cops that we want to reconfigure
-# ------------------------------------------------------------
-
-# ------------------------------------------------------------
-# END reconfigured cops
-# ------------------------------------------------------------

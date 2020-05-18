@@ -1,25 +1,5 @@
-# ------------------------------------------------------------
-# Cops that rubocop disables by default, but we want to enable
-# ------------------------------------------------------------
-
-Rails:
-  Enabled: true
-
-Rails/SaveBang:
-  Enabled: true
-
-# ------------------------------------------------------------
-# END disabled by default cops
-# ------------------------------------------------------------
-# Cops that rubocop enables by default, but we want to disable
-# ------------------------------------------------------------
-
-# ------------------------------------------------------------
-# END enabled by default cops
-# ------------------------------------------------------------
-# Cops that we want to reconfigure
-# ------------------------------------------------------------
-
-# ------------------------------------------------------------
-# END reconfigured cops
-# ------------------------------------------------------------
+AllCops:
+  DisplayStyleGuide: true
+  ExtraDetails: true
+  EnabledByDefault: true
+  NewCops: enable
