@@ -46,11 +46,11 @@ inherit_gem:
 
 ## Upgrading to new rubocop versions:
 
-1. Open Rubocop's `config/default.yml` and search for `Enabled: false`.
-2. Compare these cops against the 'disabled by default' sections of `default.yml` and `rails.yml`
-3. For any new cops, decide whether to enable (if not, add a comment to `default.yml` or `rails.yml` indicating why)
-4. Update the `spec.version` in `rubocop-config-oharagroup.gemspec`
-5. Test the new gem version in a sibling Ruby project by appending `, path: '../rubocop-config-oharagroup'` to the entry in the projects' `Gemfile`
+1. Update the `spec.version` in `rubocop-config-oharagroup.gemspec`
+2. Test the new gem version in a sibling Ruby project by appending `, path: '../rubocop-config-oharagroup'` to the entry in the projects' `Gemfile`
+3. `cd <sibling Ruby project>`
+4. `bundle exec rubocop -P`
+5. For any new offenses, decide whether to correct the code, reconfigure the cop, or disable the cop
 6. Rebuild the gem (`gem build rubocop-config-oharagroup.gemspec`)
 7. Tag the repo (`git tag -am "Version ${spec.version}" v${spec.version}`)
 8. Push the changes & tag to origin (`git push && git push --tags`)

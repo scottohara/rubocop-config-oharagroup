@@ -1,0 +1,5 @@
+AllCops:
+  DisplayStyleGuide: true
+  ExtraDetails: true
+  EnabledByDefault: true
+  NewCops: enable

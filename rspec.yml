@@ -34,12 +34,12 @@ RSpec/ExampleWording:
 RSpec/ExpectInHook:
   Enabled: false
 
-# Enable use of both `allow` and 'expect' for message expectations
-RSpec/MessageExpectation:
-  Enabled: false
-
 # Allow stubbing message chains
 RSpec/MessageChain:
+  Enabled: false
+
+# Enable use of both `allow` and 'expect' for message expectations
+RSpec/MessageExpectation:
   Enabled: false
 
 # Prefer `expect().to receive ...` over `allow().to receive ...` + `expect().to have_received ...`
@@ -50,8 +50,16 @@ RSpec/MessageSpies:
 RSpec/MultipleExpectations:
   Enabled: false
 
+# Allow any number of let/subject calls
+RSpec/MultipleMemoizedHelpers:
+  Enabled: false
+
 # Allow any number of nested groups
 RSpec/NestedGroups:
+  Enabled: false
+
+# Allow `expect().to receive().with().and_return ...`
+RSpec/StubbedMock:
   Enabled: false
 
 # Allow concerns to stub subject

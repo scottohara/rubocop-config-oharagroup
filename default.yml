@@ -40,6 +40,10 @@ Metrics:
 Style/BlockComments:
   Enabled: false
 
+# Prefer `class << self` to `self.method_name`
+Style/ClassMethodsDefinitions:
+  EnforcedStyle: self_class
+
 Style/Copyright:
   Notice: 'Copyright \(c\) 2016 Scott O.Hara, oharagroup.net'
 
