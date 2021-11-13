@@ -49,7 +49,7 @@ inherit_gem:
 1. Update the `spec.version` in `rubocop-config-oharagroup.gemspec`
 2. Test the new gem version in a sibling Ruby project by appending `, path: '../rubocop-config-oharagroup'` to the entry in the projects' `Gemfile`
 3. `cd <sibling Ruby project>`
-4. `bundle exec rubocop -P`
+4. `bundle exec rubocop`
 5. For any new offenses, decide whether to correct the code, reconfigure the cop, or disable the cop
 6. Rebuild the gem (`gem build rubocop-config-oharagroup.gemspec`)
 7. Tag the repo (`git tag -am "Version ${spec.version}" v${spec.version}`)

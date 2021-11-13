@@ -24,6 +24,14 @@ Layout/IndentationWidth:
 Layout/LineLength:
   Enabled: false
 
+# Allow redundant line breaks for readability
+Layout/RedundantLineBreak:
+  Enabled: false
+
+# Allow chained method calls after single line blocks
+Layout/SingleLineBlockChain:
+  Enabled: false
+
 # Don't allow spaces inside literal hash braces
 Layout/SpaceInsideHashLiteralBraces:
   EnforcedStyle: no_space
