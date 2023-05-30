@@ -58,6 +58,10 @@ RSpec/MultipleMemoizedHelpers:
 RSpec/NestedGroups:
   Enabled: false
 
+# Allow examples (`it`) with no expectations, such as when all expections are in `before` or `after` hooks
+RSpec/NoExpectationExample:
+  Enabled: false
+
 # Allow `expect().to receive().with().and_return ...`
 RSpec/StubbedMock:
   Enabled: false
