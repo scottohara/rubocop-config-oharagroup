@@ -1,7 +1,6 @@
 [![Gem Version](https://badge.fury.io/rb/rubocop-config-oharagroup.svg)](https://badge.fury.io/rb/rubocop-config-oharagroup)
 
-O'Hara Group Ruby style guide
-=============================
+# O'Hara Group Ruby style guide
 
 ## Usage:
 
@@ -21,7 +20,7 @@ end
 inherit_gem:
   rubocop-config-oharagroup:
     - default.yml
-    - rails.yml		# optional, only include for rails projects
+    - rails.yml # optional, only include for rails projects
 
 # ------------------------------------------------------------
 # Cops that rubocop disables by default, but we want to enable
@@ -54,7 +53,7 @@ inherit_gem:
 6. Rebuild the gem (`gem build rubocop-config-oharagroup.gemspec`)
 7. Tag the repo (`git tag -am "Version ${spec.version}" v${spec.version}`)
 8. Push the changes & tag to origin (`git push && git push --tags`)
-9. Publish the new version (`gem push rubocop-config-oharagroup-${spec.version}.gem`)
+9. Publish the new version (`op run -- gem push --otp $(op item get RubyGems --otp) rubocop-config-oharagroup-${spec.version}.gem`)
 
 Publishing requires a `~/.gem/credentials` file. To setup a new computer:
 
