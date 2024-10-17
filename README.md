@@ -55,9 +55,8 @@ inherit_gem:
 8. Push the changes & tag to origin (`git push && git push --tags`)
 9. Publish the new version (`op run -- gem push --otp $(op item get RubyGems --otp) rubocop-config-oharagroup-${spec.version}.gem`)
 
-Publishing requires a `~/.gem/credentials` file. To setup a new computer:
+Publishing uses the `$GEM_HOST_API_KEY` environment variable. To setup a new computer:
 
 ```bash
-curl -u ${rubygems.org username} https://rubygems.org/api/v1/api_key.yaml > ~/.gem/credentials
-chmod 0600 ~/.gem/credentials
+echo export GEM_HOST_API_KEY="op://private/rubygems/oharagroup-push-key" > ~./localrc
 ```
