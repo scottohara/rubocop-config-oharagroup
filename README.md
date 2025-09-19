@@ -1,4 +1,5 @@
 [![Gem Version](https://badge.fury.io/rb/rubocop-config-oharagroup.svg)](https://badge.fury.io/rb/rubocop-config-oharagroup)
+[![Maintainability](https://qlty.sh/gh/scottohara/projects/rubocop-config-oharagroup/maintainability.svg)](https://qlty.sh/gh/scottohara/projects/rubocop-config-oharagroup)
 
 # O'Hara Group Ruby style guide
 
