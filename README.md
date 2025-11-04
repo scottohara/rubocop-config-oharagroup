@@ -3,16 +3,16 @@
 
 # O'Hara Group Ruby style guide
 
-## Usage:
+## Usage
 
 1. Add this gem to your `:development` and `:test` groups in your projects `Gemfile`, e.g.
 
-```ruby
-group :development, :test do
-	gem 'rubocop', require: false
-	gem 'rubocop-config-oharagroup', require: false
-end
-```
+   ```ruby
+   group :development, :test do
+      gem 'rubocop', require: false
+      gem 'rubocop-config-oharagroup', require: false
+   end
+   ```
 
 2. Install the bundle (`bundle install`)
 3. Create a `.rubocop.yml` file in the root of your project as follows:
@@ -44,7 +44,7 @@ inherit_gem:
 # ------------------------------------------------------------
 ```
 
-## Upgrading to new rubocop versions:
+## Upgrading to new rubocop versions
 
 1. Update the `spec.version` in `rubocop-config-oharagroup.gemspec`
 2. Test the new gem version in a sibling Ruby project by appending `, path: '../rubocop-config-oharagroup'` to the entry in the projects' `Gemfile`
