@@ -4,3 +4,7 @@ AllCops:
   ExtraDetails: true
   EnabledByDefault: true
   NewCops: enable
+
+# Allow Rails.env.production? and similar usage
+Rails/Env:
+  Enabled: false
