@@ -23,6 +23,7 @@ inherit_gem:
     - default.yml
     - rails.yml # optional, only include for rails projects
 
+
 # ------------------------------------------------------------
 # Cops that rubocop disables by default, but we want to enable
 # ------------------------------------------------------------
@@ -51,13 +52,7 @@ inherit_gem:
 3. `cd <sibling Ruby project>`
 4. `bundle exec rubocop`
 5. For any new offenses, decide whether to correct the code, reconfigure the cop, or disable the cop
-6. Rebuild the gem (`gem build rubocop-config-oharagroup.gemspec`)
-7. Tag the repo (`git tag -am "Version ${spec.version}" v${spec.version}`)
-8. Push the changes & tag to origin (`git push && git push --tags`)
-9. Publish the new version (`op run -- gem push --otp $(op item get RubyGems --otp) rubocop-config-oharagroup-${spec.version}.gem`)
-
-Publishing uses the `$GEM_HOST_API_KEY` environment variable. To setup a new computer:
-
-```bash
-echo export GEM_HOST_API_KEY="op://private/rubygems/oharagroup-push-key" > ~./localrc
-```
+6. Tag & push (`git tag -am "Version X.Y.Z" vX.Y.Z && git push`)
+7. Create a new GitHub release for the tag
+8. Remove the `path: '../rubocop-config-oharagroup'` from the sibling projects `Gemfile`, and replace with the new version
+9. Run `bundle install` to install the new version
