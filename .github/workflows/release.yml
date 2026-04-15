@@ -31,5 +31,8 @@ jobs:
       - name: Build
         run: gem build rubocop-config-oharagroup.gemspec
 
+      - name: Configure RubyGems credentials
+        uses: rubygems/configure-rubygems-credentials@v1
+
       - name: Publish
         run: gem push rubocop-config-oharagroup-*.gem
