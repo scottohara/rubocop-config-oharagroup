@@ -4,3 +4,7 @@ AllCops:
   ExtraDetails: true
   EnabledByDefault: true
   NewCops: enable
+
+# Omit parens where possible
+FactoryBot/ConsistentParenthesesStyle:
+  EnforcedStyle: omit_parentheses

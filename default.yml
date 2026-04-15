@@ -5,6 +5,10 @@ AllCops:
   EnabledByDefault: true
   NewCops: enable
 
+# Align multi-line arguments with a single tab
+Layout/ArgumentAlignment:
+  EnforcedStyle: with_fixed_indentation
+
 # Use consistent indentation for arrays even in method calls
 Layout/FirstArrayElementIndentation:
   EnforcedStyle: consistent
@@ -65,9 +69,8 @@ Style/InlineComment:
   Enabled: false
 
 # Omit parens where possible
-# TODO - check if we can leave this enabled and switch EnforcedStyle: omit_parentheses
 Style/MethodCallWithArgsParentheses:
-  Enabled: false
+  EnforcedStyle: omit_parentheses
 
 # Else not required
 Style/MissingElse:
