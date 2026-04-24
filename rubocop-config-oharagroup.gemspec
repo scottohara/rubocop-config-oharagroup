@@ -8,6 +8,7 @@ Gem::Specification.new do |spec|
   spec.homepage = 'https://github.com/scottohara/rubocop-config-oharagroup'
 	spec.license = 'MIT'
 	spec.required_ruby_version = '>= 4.0.1'
+	spec.metadata = { 'rubygems_mfa_required' => 'true' }
 	spec.files = [
 		'lib/rubocop-config-oharagroup.rb',
 		'LICENSE',
