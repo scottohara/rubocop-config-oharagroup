@@ -64,6 +64,10 @@ Style/Copyright:
 Style/DocumentationMethod:
   Enabled: false
 
+# Always use shorthand syntax where possible
+Style/HashSyntax:
+  EnforcedShorthandSyntax: always
+
 # Allow trailing inline comments
 Style/InlineComment:
   Enabled: false
