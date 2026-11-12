@@ -1,9 +1,6 @@
 ---
-AllCops:
-  DisplayStyleGuide: true
-  ExtraDetails: true
-  EnabledByDefault: true
-  NewCops: enable
+plugins:
+  - rubocop-rspec
 
 # Don't enforce alignment of braces
 RSpec/AlignLeftLetBrace:
@@ -33,10 +30,6 @@ RSpec/ExampleWording:
 
 # Allow use of expect in before/after hooks
 RSpec/ExpectInHook:
-  Enabled: false
-
-# Allow stubbing message chains
-RSpec/MessageChain:
   Enabled: false
 
 # Enable use of both `allow` and 'expect' for message expectations

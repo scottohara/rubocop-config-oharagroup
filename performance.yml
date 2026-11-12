@@ -1,6 +1,3 @@
 ---
-AllCops:
-  DisplayStyleGuide: true
-  ExtraDetails: true
-  EnabledByDefault: true
-  NewCops: enable
+plugins:
+  - rubocop-performance

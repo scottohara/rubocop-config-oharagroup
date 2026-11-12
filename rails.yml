@@ -1,10 +1,19 @@
 ---
+plugins:
+  - rubocop-rails
+
 AllCops:
-  DisplayStyleGuide: true
-  ExtraDetails: true
-  EnabledByDefault: true
-  NewCops: enable
+  Exclude:
+    - "bin/*"
+    - "config/**/*"
+    - "db/migrate/*"
+    - "db/schema.rb"
+    - "spec/*_helper.rb"
 
 # Allow Rails.env.production? and similar usage
 Rails/Env:
   Enabled: false
+
+# Allow reading of ENV vars for authentication
+Rails/EnvironmentVariableAccess:
+  AllowReads: true

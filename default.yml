@@ -4,6 +4,10 @@ AllCops:
   ExtraDetails: true
   EnabledByDefault: true
   NewCops: enable
+  UseProjectIndex: true
+  inherit_mode:
+    merge:
+      - Exclude
 
 # Align multi-line arguments with a single tab
 Layout/ArgumentAlignment:
